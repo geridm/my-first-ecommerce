@@ -29,7 +29,7 @@ function cart (db, printProducts) {
         const product = db.find(p => p.id === item.id)
         htmlCart += `
         <button class="modal__close-button" id="close-modal">
-          <i class="bx bx-x"></i>
+         
         </button>
         <article class="article">
           <div class="article__image">
@@ -168,7 +168,7 @@ function cart (db, printProducts) {
     }
     if (e.target.closest('.show--modal--details')) {
       const id = +e.target.closest('.show--modal--details').dataset.id
-      console.log('el q voy a pasar es ', id)
+      
       showModal(id);
     }
   })
@@ -179,12 +179,12 @@ function cart (db, printProducts) {
   });
 
   function showModal(id) {
-    console.log('details ,',id )
+    
     
     let cartd = []
     let htmlCart = ''
     let htmlCart2 = ''
-    console.log('cartd ,',cartd )
+    
 
     
       const productd = db.find(p => p.id === id)

@@ -3,7 +3,7 @@ function darkModeJS () {
     const body = document.body;
 
     darkModeToggle.addEventListener("click", () => {
-        console.log('aqui entro al click'),
+       
         body.classList.toggle("dark-mode");
     });
 }
